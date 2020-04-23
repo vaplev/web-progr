@@ -1,2 +1,2 @@
-//import about from './about.html'
-console.log('about');
+import about from './about.html'
+import './css/about.css'

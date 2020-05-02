@@ -12,7 +12,8 @@ module.exports = {
   mode: 'development',
   entry: {
     index: ['./src/index.js', hotMiddlewareScript],
-    about: ['./src/about.js', hotMiddlewareScript]
+    about: ['./src/about.js', hotMiddlewareScript],
+    hedgehog: ['./src/hedgehog.js', hotMiddlewareScript]
   },
   output: {
     filename: '[name].bundle.js',
@@ -25,22 +26,40 @@ module.exports = {
     host: 'localhost',
   }, */
   module: {
-    rules: [{
+    rules: [
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          publicPath: 'fonts',
+          outputPath: 'fonts'
+        }
+      },
+      {
         test: /\.css$/,
 
         use: [
           'style-loader',
+          
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
               name: '[name].[ext]',
               publicPath: 'styles',
               outputPath: 'styles',
-              hmr: true
+              hmr: true,
             },
           },
-          'css-loader',
+          { 
+            loader: 'css-loader',
+            options: {
+              url: true
+            }
+          },
         ],
+
+
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -56,7 +75,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         loader: 'file-loader',
         options: {
-          name: '[name]/[name].[ext]',
+          name: '[name].[ext]',
           publicPath: 'fonts',
           outputPath: 'fonts'
         }
@@ -76,7 +95,7 @@ module.exports = {
             publicPath: 'fonts',
             outputPath: 'fonts',
             // Output below fonts directory
-            name: '[name]/[name].[ext]',
+            name: '[name].[ext]',
           }
         },
       },
@@ -91,6 +110,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({}),
     new HtmlWebpackPlugin({
       template: __dirname + '/src/about.html',
@@ -106,27 +126,19 @@ module.exports = {
       chunks: ['index'],
       title: 'Index HTML'
     }),
-
+    new HtmlWebpackPlugin({
+      template: __dirname + '/src/hedgehog.html',
+      filename: 'hedgehog.html',
+      inject: 'body',
+      chunks: ['hedgehog'],
+      title: 'hedgehog HTML'
+    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new CleanWebpackPlugin(),
+    
     new MiniCssExtractPlugin({
       filename: 'styles/[name].css',
-    }),
-/*     new CopyWebpackPlugin([
-      {
-        from: "./src/fonts",
-        to: "./fonts"
-      },
-      {
-        from: "./src/favicon",
-        to: "./favicon"
-      },
-      {
-        from: "./src/images",
-        to: "./images"
-      }
-    ]) */
+    })
   ]
 };

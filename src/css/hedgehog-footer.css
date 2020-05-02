@@ -1,0 +1,69 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+.footer .menu {
+    background: #7444a0;
+    padding-bottom: 20px; 
+}
+
+.footer .menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fbdfff;
+    transition: color ease-in 0.3s;
+}
+
+.footer .menu a:hover {
+    color: #fefefe;
+}
+
+.footer .menu .icon-small {
+    margin-right: 10px;
+    
+}
+
+.footer .menu .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer .menu .link-wrapper {
+    margin-bottom: 10px;
+}
+
+.footer .menu .links{
+    float: left;
+    padding: 40px 80px 20px 0px;
+}
+
+.footer .menu .links .links-block {
+    float: left;
+    margin-right: 60px;
+}
+
+.footer .menu .block-caption {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #daabe0;
+}
+
+.footer .menu .contacts{
+    float: left;
+    padding: 40px 80px 20px 0px;
+}
+
+.footer .copyrights{
+    background: #3a3434;
+}
+
+.footer .copyrights .copyrights-caption {
+    color: #cecece;
+    padding: 5px 0;
+    border-top: 1px solid #3a3434;
+    font-size: 14px;
+}

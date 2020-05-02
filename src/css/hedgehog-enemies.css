@@ -1,0 +1,47 @@
+.hedgehog-enemies {
+    padding: 50px 0 0 0;
+    background: #e02121;
+}
+
+.hedgehog-enemies .hedgehog-enemies-list {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.hedgehog-enemies .hedgehog-enemies-list .enemy-wrapper {
+    width: 16.665%;
+}
+.hedgehog-enemies .hedgehog-enemies-list .enemy {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.hedgehog-enemies .hedgehog-enemies-list .enemy .enemy-name {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #292929c2;
+    position: absolute;
+    bottom: -100%;
+    transition: bottom ease-out 0.5s;
+}
+.hedgehog-enemies .hedgehog-enemies-list .enemy:hover .enemy-name {
+    bottom: 0;
+}
+.hedgehog-enemies .hedgehog-enemies-list .enemy img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: transform ease-out 0.5s;
+}
+
+.hedgehog-enemies .hedgehog-enemies-list .enemy:hover img {
+   transform: scale(1.1);
+}

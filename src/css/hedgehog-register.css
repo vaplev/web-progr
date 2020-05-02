@@ -1,0 +1,81 @@
+.hedgehog-register {
+    padding: 50px 0;
+}
+
+.hedgehog-register .form-wrapper {
+    /* display: flex;
+    justify-content: center; */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 80px;
+    box-shadow: 0 0 5px 0 #cecece;
+    border: 1x solid #cecece;
+    
+}
+
+.hedgehog-register .form-wrapper  form {
+    display: block;
+}
+
+.hedgehog-register form [type="email"],
+.hedgehog-register form [type="password"] {
+    padding: 10px ;
+    background: #ffffff !important;
+    border: none;
+/*     position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    display: block;
+    min-width: 100%;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    padding: 15px 25px 15px 40px;
+    font-size: 16px;
+    margin-right: -50px;
+    color: #292929;
+ }
+
+
+
+.hedgehog-register form .input-wrapper {
+    
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    display: block;
+ }
+
+.hedgehog-register form .input-wrapper .icon {
+    position: absolute;
+    left: 13px;
+    top: 15px;
+    font-size: 16px;
+    color: #cecece;
+    z-index: 100;
+}
+
+
+.hedgehog-register form [type="submit"] {
+    background: #228bf7;
+    border: 1px solid #0173e8;
+    color: #ffffff;
+    padding: 15px 25px;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: background ease-in 0.3s,
+                box-shadow ease-in 0.3s;
+}
+
+.hedgehog-register form [type="submit"]:hover {
+    background: #0173e8;
+    border: 1px solid #0173e8;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 0px #cecece;
+}

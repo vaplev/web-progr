@@ -1,0 +1,56 @@
+.hedgehog-features {
+    padding: 50px;
+}
+
+.hedgehog-features .features-list {
+    margin: -15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hedgehog-features .feature-wrapper {
+    
+    width: 33.333%;
+    padding: 15px;
+}
+
+.hedgehog-features .feature {
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #cecece;
+    padding: 40px 20px 20px 20px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.hedgehog-features .feature.top {
+    margin-top: 0;
+    padding-bottom: 40px;
+}
+
+.hedgehog-features .feature .top-feature {
+    background: red;
+    color: #ffffff;
+    position: absolute;
+    transform: rotate(45deg);
+    padding: 5px 20px;
+    width: 130px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    top: 20px;
+    right: -30px;
+    text-align: center;
+}
+
+.hedgehog-features .feature .feature-header {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hedgehog-features .feature .feature-description {
+    font-size: 14px;
+    line-height: 1.7;
+}

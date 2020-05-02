@@ -1,0 +1,150 @@
+.hedgehog-chat {
+    padding: 50px 0 100px 0;
+}
+
+.hedgehog-chat .chat-wrapper {
+
+}
+
+
+.hedgehog-chat .chat-area {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 25px;
+    border-radius: 15px;
+    border: 1px solid #cecece;
+    box-shadow: 0 0 5px 0 #cecece;
+}
+
+.hedgehog-chat .chat-area .messages-list {
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #cecece;
+}
+
+.hedgehog-chat .chat-area .messages-list .message {
+    display: flex;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.hedgehog-chat .chat-area .messages-list .message.hedgehog {
+    flex-direction: row;
+    /* align-self: flex-start; */
+    flex-grow: 1;
+}
+
+.hedgehog-chat .chat-area .messages-list .message.user {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    margin-right: 25px;
+    flex-grow: 1;
+}
+
+.hedgehog-chat .chat-area .messages-list .message .avatar {
+    width: 65px;
+    height: 65px;
+    
+    /* overflow: hidden; */
+}
+
+.hedgehog-chat .chat-area .messages-list .message .avatar img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+
+.hedgehog-chat .chat-area .messages-list .message .data {
+    padding: 10px 25px;
+    margin: 0 25px;
+    border-radius: 15px;
+    
+    flex-grow: 1;
+    position: relative;
+    background: #ecf6fb;
+}
+
+.hedgehog-chat .chat-area .messages-list .message .data .metadata .username{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.hedgehog-chat .chat-area .messages-list .message .data .metadata .date {
+    color: #b1b1b1;
+    font-size: 13px;
+}
+
+.hedgehog-chat .chat-area .messages-list .message .data .body{
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.hedgehog-chat .chat-area .messages-list .message.hedgehog .data::before {
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    /* z-index: -1; */
+    width: 17px;
+    height: 17px;
+    left: -8.5px;
+    background: #ecf6fb;
+    position: absolute;
+    top: 25px;
+}
+
+.hedgehog-chat .chat-area .messages-list .message.user .data::after {
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    /* z-index: -1; */
+    width: 17px;
+    height: 17px;
+    right: -8.5px;
+    background: #ecf6fb;
+    position: absolute;
+    top: 25px;
+}
+
+.hedgehog-chat .chat-area .chat-controls form {
+    border-top: 1px solid #cecece;
+    padding: 25px 0 0 0;
+}
+
+.hedgehog-chat .chat-area textarea {
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    min-height: 150px;
+    max-height: 150px;
+    height: 150px;
+    float: left;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+    margin: 0;
+    padding: 0;
+    padding-right: 25px;
+    margin-right: 15px !important;
+}
+
+.hedgehog-chat .chat-area [type="button"] {
+    border: none;
+    background: none;
+    padding: 10px 25px;
+    color: #0a9611;
+    border: 1px solid #0a9611;
+    display: block;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: background ease-in 0.3s;
+}
+
+.hedgehog-chat .chat-area [type="button"]:hover {
+    color: #ffffff;
+    background: #0a9611;
+}

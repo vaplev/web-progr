@@ -10,10 +10,12 @@ import './css/hedgehog-life.css'
 import './css/hedgehog-chat.css'
 import './css/hedgehog-register.css'
 import '@fortawesome/fontawesome-free/js/all'
+import "@fortawesome/fontawesome-free/css/all.min.css"
 import './images/hedgehog-2.jpg'
 import './images/hedgehog.jpg'
 
 import _ from "loadsh";
+import axios from 'axios'
 import {phrase, helloWorld as hw} from './scripts/helloworld'
 /* const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
@@ -355,9 +357,22 @@ document.querySelectorAll('.enemy').forEach(enemy=> {
 document.forms.register.addEventListener('submit', e=> {
     e.preventDefault();
     console.log('preventDefault');
-
-    location = 'https://docs.microsoft.com'
-    
+    const form = document.forms.register
+    console.log(form)
+    console.log(form.email.value)
+    axios({
+        method: 'post',
+        url:'/api/users',
+        data: {
+            email: form.email.value,
+            password: form.password.value,
+            confirm: form.confirm.value
+        }
+    }).then(response=> {
+        console.log(response)
+    }).catch(error=> {
+        console.log(error)
+    });
 });
 
 //console.log(helloModule); 

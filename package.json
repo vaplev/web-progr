@@ -19,16 +19,12 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.2",
-    "express": "^4.17.1",
-    "express-urlrewrite": "^1.2.0",
     "extract-loader": "^5.0.1",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "mssql": "^6.2.0",
     "style-loader": "^1.1.4",
-    "tedious": "^8.3.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
@@ -38,6 +34,12 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
+    "axios": "^0.19.2",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-urlrewrite": "^1.2.0",
+    "hbs": "^4.1.1",
     "loadsh": "0.0.4"
   }
 }

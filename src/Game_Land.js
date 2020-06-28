@@ -1,1 +1,7 @@
 import Game_Land from './Game_Land.html'
+import './css/Game_Land.css'
+import './images/bg-about.png'
+import './images/bg-features.png'
+import './images/bg-main.svg'
+import './images/bg-qoutes.png'
+import './images/bg-requirements.svg'

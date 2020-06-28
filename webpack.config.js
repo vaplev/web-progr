@@ -13,7 +13,8 @@ module.exports = {
   entry: {
     index: ['./src/index.js', hotMiddlewareScript],
     about: ['./src/about.js', hotMiddlewareScript],
-    hedgehog: ['./src/hedgehog.js', hotMiddlewareScript]
+    hedgehog: ['./src/hedgehog.js', hotMiddlewareScript],
+    Game_Land: ['./src/Game_Land.js', hotMiddlewareScript]
   },
   output: {
     filename: '[name].bundle.js',
@@ -143,6 +144,13 @@ module.exports = {
       inject: 'body',
       chunks: ['hedgehog'],
       title: 'hedgehog HTML'
+    }),
+    new HtmlWebpackPlugin({
+      template: __dirname + '/src/Game_Land.html',
+      filename: 'Game_Land.html',
+      inject: 'body',
+      chunks: ['Game_Land'],
+      title: 'Game_Land HTML'
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),

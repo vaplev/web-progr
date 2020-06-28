@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+
+.html {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+html, body, div, p, h1{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 960px;
+    position: relative;
+}
+
+.main .main-bg
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/bg-main.svg) center;
+    background-size: cover;
+}
+
+.main .header {
+    height: 55px;
+    line-height: 55px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+
+.main .header .logo {
+    float: left;
+}
+
+.main .header .menu {
+    padding-left: 145px;
+    float: left;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+}
+
+.main .header .menu-item {
+    color: white;
+    padding: 0 30px;
+    text-decoration: none; 
+}
+
+.main .header .language-item {
+    float: left;
+}
+
+.main .header .store-icons {
+    float: right;
+}
+
+.main .header .store-icons a {
+    text-decoration: none;
+    padding-left: 17px;
+}
+
+.main .promo {
+    margin-top: 180px;
+    text-align: center;
+}
+
+.main .promo h1 {
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.main .promo p {
+    font-family: Bebas Neue;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.main .button-buy {
+    position: static;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+    background: linear-gradient(183.46deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.main .button-buy a {
+    text-decoration: none;
+}
+
+.main .button-buy .buy-text {
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.main .button-buy .spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main .button-buy .price {
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.main .scroll-down-button {
+    margin-top: 380px;
+    text-align: center;
+}
+
+.main .scroll-down-button a {
+    text-decoration: none;
+}
+
+.main .button-text {
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+.about {
+    height: 1050px;
+    position: relative;
+}
+
+.about .about-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/bg-about.png) center;
+    background-size: cover;
+}
+
+
+.features {
+    height: 870px;
+    position: relative;
+}
+
+.features .features-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/bg-features.png) center;
+    background-size: cover;
+}
+
+
+.requirements {
+    height: 960px;
+    position: relative;
+}
+
+.requirements .requirements-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/bg-requirements.svg) center;
+    background-size: cover;
+}
+
+.quotes {
+    height: 960px;
+    position: relative;
+}
+
+.quotes .qoutes-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/bg-qoutes.png) center;
+    background-size: cover;
+}
+
+
+.news-register {
+    height: 960px;
+    position: relative;
+}
+
+.news-register .news-register-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #080a0b;
+}

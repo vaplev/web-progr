@@ -40,6 +40,9 @@
     "express-handlebars": "^4.0.4",
     "express-urlrewrite": "^1.2.0",
     "hbs": "^4.1.1",
-    "loadsh": "0.0.4"
+    "jquery": "^3.5.1",
+    "jsdom": "^16.2.2",
+    "loadsh": "0.0.4",
+    "slick-carousel": "^1.8.1"
   }
 }

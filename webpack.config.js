@@ -11,9 +11,6 @@ const dist = path.resolve(__dirname, 'dist');
 module.exports = {
   mode: 'development',
   entry: {
-    index: ['./src/index.js', hotMiddlewareScript],
-    about: ['./src/about.js', hotMiddlewareScript],
-    hedgehog: ['./src/hedgehog.js', hotMiddlewareScript],
     Game_Land: ['./src/Game_Land.js', hotMiddlewareScript]
   },
   output: {
@@ -21,11 +18,6 @@ module.exports = {
     path: dist,
     publicPath: '/'
   },
-/*   devServer: {
-    contentBase: './dist',
-    hot: true,
-    host: 'localhost',
-  }, */
   module: {
     rules: [
       {
@@ -131,27 +123,6 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({}),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/about.html',
-      filename: 'about.html',
-      inject: 'body',
-      chunks: ['about'],
-      title: 'About HTML'
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/index.html',
-      filename: 'index.html',
-      inject: 'body',
-      chunks: ['index'],
-      title: 'Index HTML'
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/hedgehog.html',
-      filename: 'hedgehog.html',
-      inject: 'body',
-      chunks: ['hedgehog'],
-      title: 'hedgehog HTML'
-    }),
     new HtmlWebpackPlugin({
       template: __dirname + '/src/Game_Land.html',
       filename: 'Game_Land.html',

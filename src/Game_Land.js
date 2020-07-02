@@ -23,8 +23,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 $('.gallery').slick({
-    dots: true,
-
+    dots: true
 });
 
 var fr = document.querySelector("form");

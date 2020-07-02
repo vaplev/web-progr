@@ -1,0 +1,41 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 870px;
+    position: relative;
+    background: url(/images/bg-features.png) center;
+    background-size: cover;
+}
+
+.features .right-block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.features .info {
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.features .features-block {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+
+.features .feature-text {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: white;
+    width: 360px;
+}

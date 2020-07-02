@@ -1,0 +1,55 @@
+.about {
+    height: 1050px;
+    position: relative;
+    background: url(/images/bg-about.png) center;
+    background-size: cover;
+}
+
+.about .about-box {
+    display: flex;
+    
+
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15%;
+    color: white;
+}
+
+.about .about-box .text{
+    width: 50%;
+}
+
+.about .about-box .text .border {
+    height: 3px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.about .about-box .text .text-about {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 360px;
+
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: white;
+}
+
+.about .about-box .text .text-about p {
+    margin-top: 1em;
+}
+
+.about .about-box .gallery {
+    height: 610px;
+    width: 500px;
+}
+
+.about .about-box .gallery .gal-item {
+
+}

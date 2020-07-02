@@ -9,34 +9,38 @@
         <title>SOS</title>
     </head>
     <body>
-        <div class="main">
+        <div class="main" id="m">
             <div class="header">
                 <div class="logo">
                     <a href="/Game_Land">
-                        <img src="images/logo.svg" alt="SOS">
+                        <img src="images/logo.png" alt="SOS" width="55" height="55">
                     </a>
                 </div>
                 <div class="menu">
-                    <a href="#" class="menu-item">
+                    <a href="#m" class="menu-item">
                         MAIN
                     </a>
-                    <a href="#" class="menu-item">
+                    <a href="#a" class="menu-item">
                         ABOUT
                     </a>
-                    <a href="#" class="menu-item">
+                    <a href="#f" class="menu-item">
                         GAME FEATURES
                     </a>
-                    <a href="#" class="menu-item">
+                    <a href="#r" class="menu-item">
                         SYSTEM REQUIREMENTS
                     </a>
-                    <a href="#" class="menu-item">
+                    <a href="#q" class="menu-item">
                         QUOTES
                     </a>
                 </div>
                 <div class="language-and-icons">
                     <div class="language-item">
                         ENG <img src="images/lang-arrow.svg">
-                        <div class="language-submenu"></div>
+                        <div class="language-submenu">
+                            <div class="item"><a href="#">RUS</a></div>
+                            <div class="item"><a href="#">FRA</a></div>
+                            <div class="item"><a href="#">DEU</a></div>
+                        </div>
                     </div>
                     <img src="images/spacer2.svg">
                     <div class="store-icons">
@@ -67,7 +71,7 @@
                 </div>
             </div>
             <div class="scroll-down-button">
-                <a href="#">
+                <a href="#a">
                     <div class="button-text">
                         THE STORY
                     </div>
@@ -75,36 +79,43 @@
                 </a>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="a">
             <div class="about-box">
                 <div class="text">
                     <div class="hs">
                         <h3>WHAT IS SOS?</h3>
-                        <h1>SOCIAL BATTLE ROYALE GAME</h1>
+                        <h1>
+                            SOCIAL BATTLE <br>
+                            ROYALE GAME
+                        </h1>
                     </div>
-                    <img src="images/horizontal-spacer.svg">
+                    <div class="border"></div>
                     <div class="text-about">
                         Each round, <strong>you</strong> and <strong>15</strong> other contestants
                         complete to escape a deadly island filled
                         with monsters. The trick is: <strong>three</strong> people
                         can survive. Will you run solo or form
                         friendships with others to escape?
-
-                        Making the right decisions could be
-                        the difference life and death.
+                        <p>
+                            Making the right decisions could be
+                            the difference life and death.
+                        </p>
                     </div>
                 </div>
-                <div class="slider gallery">
-                    <div>
-                        <img src="images/statue.svg">
+                <div class="gallery">
+                    <div class="gal-image">
+                        <img src="images/gal-image1.png" height="610" width="500">
                     </div>
-                    <div>
-                        <img src="images/statue.svg">
+                    <div class="gal-image">
+                        <img src="images/gal-image2.png" height="610" width="500">
+                    </div>
+                    <div class="gal-image">
+                        <img src="images/gal-image3.png" height="610" width="500">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="features">
+        <div class="features" id="f">
             <div class="right-block">
                 <div class="info">
                     <div class="hs">
@@ -135,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <div class="requirements">
+        <div class="requirements" id="r">
             <div class="hs">
                 <h3>CAN MY COMPUTER RUN THIS GANE?</h3>
                 <h1>SYSTEM REQUIREMENTS</h1>
@@ -179,10 +190,89 @@
                 </tr>
             </table>
         </div>
-        <div class="quotes">
-            
+        <div class="quotes" id="q">
+            <div class="box">
+                <div class="text-box">
+                    <div class="hs">
+                        <h3>WHAT PEOPLE THINK?</h3>
+                        <h1>PRESS QUOTES</h1>
+                    </div>
+                    <div class="text">
+                        Our goal is to create a product and service that you’re satisfied with and use it every day.
+                        This is why we’re constantly working on our services to make it better every day and really
+                        listen to what our users has to say.
+                    </div>
+                    <div class="button read-more-button">
+                        <a href="#">
+                            Read more testimonials
+                        </a>
+                    </div>
+                </div>
+                <div class="qoutes-box">
+                    <div class="qt first">
+                        <div class="row">
+                            <div class="image">
+                                <img src="images/qoute1.png" width="61" height="61">
+                            </div>
+                            <div class="head">
+                                EVAN LAHTI
+                                <p>
+                                    PC Gamer
+                                </p>
+                            </div>
+                            <img src="images/twitter-icon.svg" class="img-t">
+                        </div>
+                        <div class="comment">
+                            “One of my gaming highlights of the year.”
+                        </div>
+                        <div class="date">
+                            October 18, 2018
+                        </div>
+                    </div>
+                    <div class="qt second">
+                        <div class="row">
+                            <div class="image">
+                                <img src="images/qoute2.png" width="61" height="61">
+                            </div>
+                            <div class="head">
+                                JADA GRIFFIN
+                                <p>
+                                    Nerdreactor
+                                </p>
+                            </div>
+                            <img src="images/twitter-icon.svg" class="img-t">
+                        </div>
+                        <div class="comment">
+                            “The next big thing in the world of streaming and survival games.”
+                        </div>
+                        <div class="date">
+                            December 21, 2018
+                        </div>
+                    </div>
+                    <div class="qt third">
+                        <div class="row">
+                            <div class="image">
+                                <img src="images/qoute3.png" width="61" height="61">
+                            </div>
+                            <div class="head">
+                                AARON WILLIAMS
+                                <p>
+                                    Uproxx
+                                </p>
+                            </div>
+                            <img src="images/twitter-icon.svg" class="img-t">
+                        </div>
+                        <div class="comment">
+                            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                        </div>
+                        <div class="date">
+                            December 24, 2018
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="news-register">
+        <div class="news-register" id="n">
             <div class="news-box">
                 <div class="hs">
                     <h3>WANT TO STAY IN TOUCH?</h3>
@@ -195,7 +285,9 @@
                 </div>
                 <form action="/path-to-server-endpoint" method="post">
                     <div class="subscribe-box">
-                        Your emain address
+                        <div class="title">
+                            Your email address
+                        </div>
                         <input type="text" placeholder="aliciliniavopir@gmail.com" name="adress">
                     </div>
                     <button type="submit" class="button subscribe-button">
@@ -204,41 +296,48 @@
                 </form>
             </div>
             <div class="footer">
-                <div class="logo">
-                    <a href="/Game_Land">
-                        <img src="images/logo.svg" alt="SOS">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="#" class="manu-item">
+                <div class="row">
+                    <div class="logo">
+                        <a href="/Game_Land">
+                            <img src="images/logo.png" alt="SOS" width="90" height="90">
+                        </a>
+                    </div>
+                    <a href="#m" class="item">
                         MAIN
                     </a>
-                    <a href="#" class="manu-item">
+                    <a href="#a" class="item">
                         ABOUT
                     </a>
-                    <a href="#" class="manu-item">
+                    <a href="#f" class="item">
                         GAME FEATURES
                     </a>
-                    <a href="#" class="manu-item">
+                    <a href="#r" class="item">
                         SYSTEM REQUIREMENTS
                     </a>
-                    <a href="#" class="manu-item">
+                    <a href="#q" class="item">
                         QUOTES
                     </a>
-                </div>
-                <div class="social">
-                    <a href="http://xbox.com" target="_blank">
+                    <a href="http://xbox.com" target="_blank" class="item">
                         <span class="facebook-icon"><img src="images/facebook-icon.svg" alt="facebook"></span>
                     </a>
-                    <a href="http://steam.com" target="_blank">
+                    <a href="http://steam.com" target="_blank" class="item">
                         <span class="twitter-icon"><img src="images/twitter-icon.svg" alt="twitter"></span>
                     </a>
-                    <a href="http://steam.com" target="_blank">
+                    <a href="http://steam.com" target="_blank" class="item">
                         <span class="youtube-icon"><img src="images/youtube-icon.svg" alt="youtube"></span>
                     </a>
-                    <a href="http://steam.com" target="_blank">
+                    <a href="http://steam.com" target="_blank" class="item">
                         <span class="twitch-icon"><img src="images/twitch-icon.svg" alt="twitch"></span>
                     </a>
+                </div>
+                <div class="spacer"></div>
+                <div class="copyrights">
+                    <div class="year">
+                        © 2018 Outpost Games, Inc. All Rights Reserved
+                    </div>
+                    <div class="boring">
+                        <a href="#">PRIVACY POLICY</a> | <a href="#">TERMS OF SERVICES</a> | <a href="#">CODE OF CONDUCT</a> 
+                    </div>
                 </div>
             </div>
         </div>

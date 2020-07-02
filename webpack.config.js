@@ -122,6 +122,13 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+    new webpack.ProvidePlugin({
+      slick: 'sslick-carousel'
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({}),
     new HtmlWebpackPlugin({

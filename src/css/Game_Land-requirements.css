@@ -1,0 +1,48 @@
+.requirements {
+    display: flex;
+    flex-direction: column;
+    height: 960px;
+    position: relative;
+    background: url(/images/bg-requirements.svg) center;
+    background-size: cover;
+}
+
+.requirements .hs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35%;
+    text-align: center;
+}
+
+.requirements .hs h1 {
+    padding-top: 8px;
+}
+
+.requirements table {
+    border: 0.5px #979797;
+    border-collapse: collapse;
+    
+    width: 40%;
+    height: 40%;
+    margin-left: 10%;
+
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+
+.requirements table .text {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+.requirements td {
+    border: 0.5px solid #979797;
+    padding: 3%;
+}

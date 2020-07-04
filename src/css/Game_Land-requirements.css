@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 960px;
     position: relative;
-    background: url(/images/bg-requirements.svg) center;
+    background: url(/images/bg-requirements.svg) center no-repeat;
     background-size: cover;
 }
 
@@ -45,4 +45,18 @@
 .requirements td {
     border: 0.5px solid #979797;
     padding: 3%;
+}
+
+@media screen and (max-width: 1130px) {
+    .requirements {
+        background-position: 100% 100%;
+        background-size: 600px 600px;
+        background-color: #080a0b;
+    }
+
+    .requirements table {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }

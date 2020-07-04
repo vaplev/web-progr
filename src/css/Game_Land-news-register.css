@@ -1,5 +1,5 @@
 .news-register {
-    height: 960px;
+    height: 768px;
     position: relative;
     background: url("/images/statue.svg") no-repeat;
     background-position: 20% 10%;
@@ -7,7 +7,7 @@
 }
 
 .news-register .news-box {
-    height: 80%;
+    height: 100%;
     width: 45%;
     margin-left: 45%;
     margin-right: 10%;
@@ -85,73 +85,35 @@
 }
 
 .news-register .news-box .subscribe-button {
-    align-self: stretch;
+    align-self: start;
 }
 
-.news-register .footer {
-    height: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+@media screen and (max-width: 1100px) {
+    .news-register {
+        background-position: -200px 10%;
+    }
 
-.news-register .footer .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .news-register .news-box form {
+        width: 260px;
+        flex-direction: column;
+        height: 120px;
+    }
 
-.news-register .footer .row .logo {
-    padding-right: 5%;
-}
+    .news-register .news-box {
+        height: 100%;
+        width: 45%;
+        margin-left: 30%;
+    }
 
-.news-register .footer .row a {
-    text-decoration: none;
+    .news-register .news-box .hs h1 {
+        font-size: 60px;
+    }
 
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.1em;
-    color: white;
-}
+    .news-register .news-box .text {
+        margin-right: 0;
+    }
 
-.news-register .footer .row .item {
-    margin-top: 45px;
-    padding-left: 10px;
-}
-
-.news-register .footer .spacer {
-    margin-top: 30px;
-    opacity: 0.2;
-    border: 0.5px solid white;
-}
-
-.news-register .footer .copyrights {
-    margin-top: 22px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.news-register .footer .copyrights .year {
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    color: white;
-    opacity: 0.5;
-}
-
-.news-register .footer .copyrights .boring {
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: right;
-    letter-spacing: 0.1em;
-    color: white;
-}
-
-.news-register .footer .copyrights .boring a {
-    text-decoration: none;
-    color: white;
+    .news-register .news-box .subscribe-box {
+        width: 100%;
+    }
 }

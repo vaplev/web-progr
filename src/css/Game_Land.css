@@ -12,6 +12,11 @@ html, body, div, p, h1, h3 {
     box-sizing: border-box;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Bebas Neue';
     font-size: 80px;
@@ -30,7 +35,7 @@ h3 {
     color: white;
 }
 
-.button{
+.button {
     width: 260px;
     height: 60px;
     background: linear-gradient(183.46deg, #FFB548 11.27%, #F3AF34 90.4%);

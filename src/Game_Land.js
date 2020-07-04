@@ -10,12 +10,14 @@ import './images/gal-image2.png'
 import './images/gal-image3.png'
 import './images/qoutes-bg.png'
 import './css/Game_Land.css'
+import './css/Game_Land-header.css';
 import './css/Game_Land-main.css';
 import './css/Game_Land-about.css';
 import './css/Game_Land-features.css';
 import './css/Game_Land-requirements.css';
 import './css/Game_Land-qoutes.css';
 import './css/Game_Land-news-register.css';
+import './css/Game_Land-footer.css'
 $('#item');
 jQuery('#item');
 import 'slick-carousel'
@@ -26,19 +28,24 @@ $('.gallery').slick({
     dots: true
 });
 
-var fr = document.querySelector("form");
-
-fr.addEventListener("submit", function (e) {
+$('form').submit(function (e) {
     e.preventDefault();
     //fr.submit();
 });
 
+$('.header .language-and-icons .burger').click(function (e) {
+    document.querySelector('.header .side-menu').style.display = "flex";
+})
+
+$('.header .side-menu .menu-item').click(function (e) {
+    document.querySelector('.header .side-menu').style.display = "none";
+})
+
 $(function(){
-    $('a[href^="#"]').on('click', function(event) {
-        event.preventDefault();
-        var sc = $(this).attr("href"),
-            dn = $(sc).offset().top;
-        console.log(dn);
-        $('html, body').animate({scrollTop: dn}, 1000);
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var dist = $(this).attr("href"),
+            cord = $(dist).offset().top;
+        $('html, body').animate({scrollTop: cord}, 1000);
     });
 });

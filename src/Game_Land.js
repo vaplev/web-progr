@@ -47,14 +47,10 @@ $('.gallery').slick({
     dots: true
 });
 
-$('form').submit(function (e) {
-    e.preventDefault();
-    $.post("/addsubscriber", {address: $('form input').val()}, function(res) {
-            if (res) alert("Thank you for subscribing!");
-            else alert("Error: invalid address!");
-        }
-    );
-});
+// $('form').submit(function (e) {
+//     e.preventDefault();
+//     $.post("/addsubscriber", {address: $('form input').val()});
+// });
 
 $('.header .language-and-icons .burger').click(function (e) {
     document.querySelector('.header .side-menu').style.display = "flex";

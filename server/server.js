@@ -23,6 +23,8 @@ const { response } = require('express');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const qoutes = require('./data/qoutes.js');
+
 app.use(webpackDevMiddleware(compiler, {
   publicPath: config.output.publicPath,
   writeToDisk: true
@@ -43,17 +45,14 @@ app.engine('hbs', expressHbs({
   extname: 'hbs'
 }));
 
+app.get("/newsubscriber", (request, response) => {response.render("subscriber", {title:"Thank you!"})})
+
 app.post('/addsubscriber', (request, response) => {
-  if (request.body.address.match(/\S+@\S+\.\S+/) != null)
-    response.send(true);
-  else {
-    response.send(false);
-  }
+  console.log("new subscriber " + request.body.address);
+  response.redirect('/newsubscriber');
 })
 
-app.get("styles/images/ajax-loader.gif", (request, response, next) => {response.sendFile("/dist/images/ajax-loader.gif")});
-
-app.get("/", (request, response) => {response.render("index", {title:"Game_Land"})});
+app.get("/", (request, response) => {response.render("index", {title:"Game_Land", qoutes: qoutes})});
 
 app.listen(8080, function () {
   console.log('Listening on port 8080!\n');

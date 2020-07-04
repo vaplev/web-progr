@@ -17,66 +17,9 @@
             </div>
         </div>
         <div class="qoutes-box">
-            <div class="qt first">
-                <div class="row">
-                    <div class="image">
-                        <img src="images/qoute1.png" width="61" height="61">
-                    </div>
-                    <div class="head">
-                        EVAN LAHTI
-                        <p>
-                            PC Gamer
-                        </p>
-                    </div>
-                    <img src="images/twitter-icon.svg" class="img-t">
-                </div>
-                <div class="comment">
-                    “One of my gaming highlights of the year.”
-                </div>
-                <div class="date">
-                    October 18, 2018
-                </div>
-            </div>
-            <div class="qt second">
-                <div class="row">
-                    <div class="image">
-                        <img src="images/qoute2.png" width="61" height="61">
-                    </div>
-                    <div class="head">
-                        JADA GRIFFIN
-                        <p>
-                            Nerdreactor
-                        </p>
-                    </div>
-                    <img src="images/twitter-icon.svg" class="img-t">
-                </div>
-                <div class="comment">
-                    “The next big thing in the world of streaming and survival games.”
-                </div>
-                <div class="date">
-                    December 21, 2018
-                </div>
-            </div>
-            <div class="qt third">
-                <div class="row">
-                    <div class="image">
-                        <img src="images/qoute3.png" width="61" height="61">
-                    </div>
-                    <div class="head">
-                        AARON WILLIAMS
-                        <p>
-                            Uproxx
-                        </p>
-                    </div>
-                    <img src="images/twitter-icon.svg" class="img-t">
-                </div>
-                <div class="comment">
-                    “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
-                </div>
-                <div class="date">
-                    December 24, 2018
-                </div>
-            </div>
+            {{#each qoutes as | qoute |}}
+                {{>qoute qoute = qoute}}
+            {{/each}}
         </div>
     </div>
 </div>

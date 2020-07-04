@@ -142,6 +142,10 @@
         display: none;
     }
 
+    .header .language-and-icons {
+        flex-basis: 100px;
+    }
+
     .header .language-and-icons .store-icons {
         display: none;
     }

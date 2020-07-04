@@ -30,7 +30,11 @@ $('.gallery').slick({
 
 $('form').submit(function (e) {
     e.preventDefault();
-    //fr.submit();
+    $.post("/addsubscriber", {address: $('form input').val()}, function(res) {
+            if (res) alert("Thank you for subscribing!");
+            else alert("Eroor: invalid address!");
+        }
+    );
 });
 
 $('.header .language-and-icons .burger').click(function (e) {

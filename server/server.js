@@ -3,6 +3,12 @@ const webpack = require('webpack');
 const rewrite = require('express-urlrewrite')
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
+
+// для post
+
+const bodyParser = require("body-parser");
+const router = express.Router();
+
 const app = express();
 const config = require('../webpack.config.js');
 const compiler = webpack(config);
@@ -11,6 +17,11 @@ const cookieParser = require('cookie-parser');
 const hbs = require('hbs');
 const expressHbs = require("express-handlebars");
 const { response } = require('express');
+
+// для post
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(webpackDevMiddleware(compiler, {
   publicPath: config.output.publicPath,
@@ -31,6 +42,16 @@ app.engine('hbs', expressHbs({
   defaultLayout: 'layout',
   extname: 'hbs'
 }));
+
+app.post('/addsubscriber', (request, response) => {
+  if (request.body.address.match(/\S+@\S+\.\S+/) != null)
+    response.send(true);
+  else {
+    response.send(false);
+  }
+})
+
+app.get("styles/images/ajax-loader.gif", (request, response, next) => {response.sendFile("/dist/images/ajax-loader.gif")});
 
 app.get("/Game_Land", (request, response) => {response.render("main", {title:"Game_Land"})});
 

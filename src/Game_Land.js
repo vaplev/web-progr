@@ -32,7 +32,7 @@ $('form').submit(function (e) {
     e.preventDefault();
     $.post("/addsubscriber", {address: $('form input').val()}, function(res) {
             if (res) alert("Thank you for subscribing!");
-            else alert("Eroor: invalid address!");
+            else alert("Error: invalid address!");
         }
     );
 });

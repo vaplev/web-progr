@@ -53,7 +53,7 @@ app.post('/addsubscriber', (request, response) => {
 
 app.get("styles/images/ajax-loader.gif", (request, response, next) => {response.sendFile("/dist/images/ajax-loader.gif")});
 
-app.get("/Game_Land", (request, response) => {response.render("main", {title:"Game_Land"})});
+app.get("/", (request, response) => {response.render("index", {title:"Game_Land"})});
 
 app.listen(8080, function () {
   console.log('Listening on port 8080!\n');

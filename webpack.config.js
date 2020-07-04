@@ -117,10 +117,9 @@ module.exports = {
       jQuery: 'jquery'
     }),
     new webpack.ProvidePlugin({
-      slick: 'sslick-carousel'
+      slick: 'slick-carousel'
     }),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({}),
     new HtmlWebpackPlugin({
       template: __dirname + '/src/Game_Land.html',
       filename: 'Game_Land.html',

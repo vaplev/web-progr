@@ -120,13 +120,6 @@ module.exports = {
       slick: 'slick-carousel'
     }),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/Game_Land.html',
-      filename: 'Game_Land.html',
-      inject: 'body',
-      chunks: ['Game_Land'],
-      title: 'Game_Land HTML'
-    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
